@@ -1,0 +1,59 @@
+{
+    "name":  "mindmaven-executive-os",
+    "description":  "Mindmaven Executive OS: one plugin per skill. Install mm-setup first, then the skills you want.",
+    "owner":  {
+                  "name":  "Mindmaven"
+              },
+    "plugins":  [
+                    {
+                        "name":  "mm-calendar-review",
+                        "source":  "./plugins/mm-calendar-review",
+                        "description":  "Mindmaven Friday calendar review for an executive and their EA."
+                    },
+                    {
+                        "name":  "mm-calendar-upkeep",
+                        "source":  "./plugins/mm-calendar-upkeep",
+                        "description":  "Mindmaven daily calendar maintenance for the next business day - every weekday afternoon it checks tomorrow\u0027s events for missing video links, addresses, or phone numbers, invitees who haven\u0027t accepted (especially outside preferred hours), overlaps, stale tentative (T) holds, last-minute changes i..."
+                    },
+                    {
+                        "name":  "mm-edraft",
+                        "source":  "./plugins/mm-edraft",
+                        "description":  "Mindmaven eDrafts - turn the exec\u0027s voice note, rough notes, or a one-line ask (\"draft a follow-up to Maria\", \"intro Sam to Maria\", \"say no to the panel invite nicely\") into a polished email draft in the exec\u0027s own voice, ready to send."
+                    },
+                    {
+                        "name":  "mm-email-loop-scan",
+                        "source":  "./plugins/mm-email-loop-scan",
+                        "description":  "Daily scan of the user\u0027s email for open loops - open commitments the user is waiting on (\"did Dana sign the contract we sent?\", \"did Maria send the deck she promised?\", an intro or decision still pending) and personal moments in people\u0027s lives (trips, moves, new babies, weddings, a kid starting c..."
+                    },
+                    {
+                        "name":  "mm-eod-update",
+                        "source":  "./plugins/mm-eod-update",
+                        "description":  "Mindmaven end-of-day update - every weekday afternoon, one skimmable summary of the day for the exec - confirmations first (what got done, booked, sent, or closed), then decisions as yes/no questions with the stated assumption, tomorrow at a glance, loops captured today, and anything not handled ..."
+                    },
+                    {
+                        "name":  "mm-loop-manager",
+                        "source":  "./plugins/mm-loop-manager",
+                        "description":  "Mindmaven Loop Leverage manager - the daily tickler-file pass."
+                    },
+                    {
+                        "name":  "mm-meeting-debrief",
+                        "source":  "./plugins/mm-meeting-debrief",
+                        "description":  "Turn any meeting (a recording or the exec\u0027s own voice dictation) into a Mindmaven debrief in APPA format - Action items given and received, Professional Challenges, Personal Interests \u0026 Passions, About/Facts - then create tasks and yes/no loop leverage tasks in the task tool, update each attendee..."
+                    },
+                    {
+                        "name":  "mm-meeting-prebrief",
+                        "source":  "./plugins/mm-meeting-prebrief",
+                        "description":  "Mindmaven prebriefs, delivered the morning of each call - a skimmable brief for every call that day (external in full, internal in three lines) with the basics (name, title and company, meeting type, icebreaker, how you met, link or location, backup cell), agenda plus a silent agenda of promises ..."
+                    },
+                    {
+                        "name":  "mm-missed-task-scan",
+                        "source":  "./plugins/mm-missed-task-scan",
+                        "description":  "Daily scan of the user\u0027s email and Slack or Teams for things the user owes that never made it into their task tool - promises they made (\"I\u0027ll send that over\") and requests made of them - checked against every source so nothing already done gets suggested, deduped against existing tasks and dismi..."
+                    },
+                    {
+                        "name":  "mm-setup",
+                        "source":  "./plugins/mm-setup",
+                        "description":  "Set up, onboard, and change settings for the Mindmaven Executive OS, a connected suite of scheduled skills (prebriefs, debriefs, morning scans, loop manager, eDrafts, daily calendar upkeep, end-of-day update, Friday calendar review) that work with the user\u0027s EA or delegate."
+                    }
+                ]
+}
