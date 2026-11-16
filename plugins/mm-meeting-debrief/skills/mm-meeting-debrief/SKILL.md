@@ -28,7 +28,7 @@ Default schedules are in `conventions.md` section 7. Scheduled runs never ask qu
 **Debrief sweep (weekdays, early morning):**
 1. Read today's calendar. Skip focus blocks, holds, personal events, and events with no other attendees.
 2. **Mark each call** internal (every attendee is on `Company domain(s)`) or external (anyone else), and note never-recorded calls (matching `Never-recorded calls`).
-3. **Call tasks** (if `Call tasks: yes`): make sure there's one `Call with [First Last]` task per call, internal and external, due at the call time. If one already exists, don't create a second. The prebrief skill fills it in.
+3. **Call tasks** (if `Call tasks: yes`): make sure there's one `Call with [First Last] - YYYY-MM-DD` task per call, internal and external, due at the call time. If one already exists, don't create a second. The prebrief skill fills it in.
 4. **Schedule a one-time debrief 10 minutes after each call's scheduled end** (a buffer in case it runs long). Skip never-recorded calls.
 5. If one-time runs can't be created, say so in the report; the catch-all will handle today's calls.
 

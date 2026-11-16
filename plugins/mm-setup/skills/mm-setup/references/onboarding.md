@@ -50,8 +50,8 @@ Explain what each skill is for, one line each. List only the skills this exec in
 
 1. **Your delegate.** Explain all three modes using the table in `ea-playbook.md` (one line each, plus the Maria/Jordan example), **then** ask: "Do you have an EA, chief of staff, or colleague who helps with follow-through, and which mode fits?" Anyone who helps can be the delegate. Recommend Mode 1 to start.
 2. **Where things land.** Offer, with the default first:
-   - **People notes:** "For notes on the people you meet: **do you already have a CRM, or do you want me to build a People database in Notion?**" CRM: ask which one and connect it (`tool-guides.md`, people destinations). Notion: build it now from `notion-people-database.md` and share the link.
-   - **Call tasks:** "Want a `Call with [First Last]` task for every call, internal and external, and a `Follow up with [First Last]` task after?" (Recommended.)
+   - **People notes:** "For notes on the people you meet: **do you already have a CRM, or do you want me to build a People database in Notion?**" CRM: ask which one and connect it (`tool-guides.md`, people destinations). Notion: build it now from `notion-people-database.md`, **in their Private section** (never a shared teamspace), and share the link.
+   - **Call tasks:** "Want a `Call with [First Last] - YYYY-MM-DD` task for every call, internal and external, and a `Follow up with [First Last]` task after?" (Recommended.)
    - **Prebriefs:** "Where do you want your prebriefs each morning?"
      - **In each call task** (recommended): the brief sits inside that call's `Call with` task.
      - **One morning email** to you with all of today's briefs in time order.
@@ -62,7 +62,13 @@ Explain what each skill is for, one line each. List only the skills this exec in
    - **Loops:** "When I find proof a loop closed (like the signed contract arriving), should I close it for you with the proof attached, or list it for you to close?"
    - **Your two daily touchpoints:** "Everything that needs you comes together twice a day: a **Morning** review ready by 9:30am and an **End of day** review ready by 4:45pm. Do you want them as a task in your task tool (recommended) or as an email?" (conventions section 8). Don't offer Slack: the suite reads Slack but never delivers there.
 3. **If you don't record calls:** set up dictation now (`tool-guides.md`, "Dictating without a recorder") and have them try it once.
-4. **Existing automations.** "Does anything already prep your calls, write follow-ups, or scan your inbox, like a tool, an assistant, or another AI setup?" If yes, list what each does, propose a merge by job (`conventions.md` section 7), and only turn off what they approve.
+4. **Existing automations: look first, then ask.** Before asking, search for what's already running, so nothing doubles up:
+   - **Claude scheduled tasks** in their account (list them if the scheduling tool is available).
+   - **Duplicate task patterns** in the task tool over the last 2 weeks: recurring names that match what the suite will create (`Call with`, `Follow up with`, `Prep for`, `Review |`, `LL |`, daily scan or loop tasks), especially ones created automatically at the same time each day.
+   - **Recorder or email automations:** recorder summaries emailed after each call, auto-generated follow-up drafts, recurring "prep" calendar holds.
+   - **Other installed skills** that cover the same job (another debrief, prebrief, or loop skill).
+   Then show one short table: what you found | what it does | which Executive OS skill overlaps | **your suggestion: Keep theirs / Use ours / Run both** (with one line why). Ask "OK to go with these?" and also ask "Anything else that runs on its own that I couldn't see, like something on your computer or a tool your assistant set up?"
+   - **Turning things off:** turn off only what they approve, and only things Claude can reach (its own scheduled tasks, skills). Anything Claude can't reach (an automation running on their computer, like Windows Task Scheduler or a Mac app, a Zapier or Make zap, a recorder setting) gets a `Turn off [name]` task with the exact steps, and the overlapping Executive OS skill stays off until they confirm it's done, so they never get two of the same thing.
 5. **Changes without asking:** confirm `Writes allowed` with defaults: create tasks yes, update people pages yes, create email drafts yes, calendar changes that notify others always ask. Scan mode: review first for 2 weeks (explain the `Suggested` section: "Delete what's wrong; the rest moves into your list.").
 
 Save the Preference Sheet (`conventions.md` section 1) to Claude memory if it's on; otherwise project instructions; otherwise ask them to paste it into Settings > Profile. Show it.

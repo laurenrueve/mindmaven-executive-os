@@ -57,6 +57,36 @@ Loop leverage tasks (`LL | ...`) go in the same tool, always with a due date. In
 | Slack | Slack connector | Search the user's own messages from yesterday | Read only: used to find commitments and check whether things are done. The suite never posts to Slack. |
 | Microsoft Teams | Microsoft 365 connector, if it includes Teams | Same | If not available, the missed-task scan runs on email only and says so. |
 
+### Google Calendar colors: use these exact names and IDs
+
+Google has **two separate color lists**, and the API returns only numbers, never names. Use these tables; never guess.
+
+**Event colors** (what you set on one event; the API's `colorId`). Only these 11 exist:
+
+| colorId | Name in Google Calendar | Hex |
+|---|---|---|
+| 1 | Lavender | #7986CB |
+| 2 | Sage | #33B679 |
+| 3 | Grape | #8E24AA |
+| 4 | Flamingo | #E67C73 |
+| 5 | Banana | #F6BF26 |
+| 6 | Tangerine | #F4511E |
+| 7 | Peacock | #039BE5 |
+| 8 | Graphite | #616161 |
+| 9 | Blueberry | #3F51B5 |
+| 10 | Basil | #0B8043 |
+| 11 | Tomato | #D50000 |
+| (none) | "Calendar color": the event uses its calendar's color | |
+
+**Calendar colors** (one color for a whole calendar, set in that calendar's settings): Cocoa, Flamingo, Tomato, Tangerine, Pumpkin, Mango, Eucalyptus, Basil, Pistachio, Avocado, Citron, Banana, Sage, Peacock, Cobalt, Blueberry, Lavender, Wisteria, Graphite, Birch, Radicchio, Cherry Blossom, Grape, **Amethyst**.
+
+How to apply the exec's color rules:
+- When saving `Colors:` in the Preference Sheet, write each as the exact event name **and** ID, e.g. `Internal = Lavender (1)`.
+- If the exec names a color that is **only** a calendar color (Amethyst, Cocoa, Pumpkin, Mango, Eucalyptus, Pistachio, Avocado, Citron, Cobalt, Wisteria, Birch, Radicchio, Cherry Blossom), it can't be set on one event. Check which of their calendars uses that color. If it's their main calendar's color, the rule means "leave the event on calendar color" (no `colorId`). Otherwise ask which of the 11 event colors to use instead, one question, offering the two nearest (e.g. Amethyst -> Lavender or Grape; Cobalt -> Peacock or Blueberry; Pumpkin -> Tangerine or Banana). Never pick one silently.
+- When reading an event: `colorId` empty means calendar color; report it as "[calendar name]'s color ([that calendar's color name])".
+
+Microsoft Outlook uses named categories instead of colors: read the category names the exec already uses and match them exactly.
+
 For an EA in Mode 2 (see `ea-playbook.md`): the EA connects their own accounts in their own Claude, and the executive grants delegate access to calendar and mail in Google Workspace or Outlook. Chat DMs can't be delegated, so the executive runs the chat part of the missed-task scan.
 
 ## People notes destinations

@@ -42,7 +42,7 @@ Email: [Gmail / Outlook]
 Calendar: [Google / Outlook]  |  Personal calendar: [name or none]
 Chat: [Slack / Teams / none]
 Tasks: [tool] -> [project, or My Tasks]  |  Scheduling tasks: [project, e.g. Ongoing Scheduling]
-Call tasks: [yes/no] "Call with [First Last]" for every call (internal + external), due at the call, prebrief inside  |  Follow-up task: [yes/no] "Follow up with [First Last]" after the call
+Call tasks: [yes/no] "Call with [First Last] - YYYY-MM-DD" (the call's date, so repeat calls with the same person never get mixed up) for every call (internal + external), due at the call, prebrief inside  |  Follow-up task: [yes/no] "Follow up with [First Last]" after the call
 Loop leverages: [tool] -> [Loop Leverage project]  |  LL default: [2-3] business days  |  LL exceptions: [e.g. no LL for internal team]
 People notes: [CRM name, or Notion People database + link, or Google Sheet + link]
 Company domain(s): [e.g. acme.com] (calls with only these attendees are internal)  |  Never-recorded calls: [e.g. titles containing "Board"]
@@ -52,7 +52,7 @@ Calendar rules:
   Max meeting hours/day: [6, or per day, e.g. 3 on Tue/Wed/Fri]  |  Lunch: [12:00-1:00 daily, 45 min]
   Whitespace: [4-6] hrs/week minimum, blocks: [e.g. Mon + Fri]  |  Protected: [e.g. Fri PM, school pickup 3pm]
   Invite naming: [(C) First Last <> First Last | in person: (SF) ... | tentative: (T)]
-  Colors: [the exec's own mapping, if they color-code, e.g. Internal Lavender, Personal Flamingo, Tentative Graphite]
+  Colors: [the exec's own mapping, with exact Google event color name + ID (tool-guides.md, "Google Calendar colors"), e.g. Internal = Lavender (1), Personal = Flamingo (4), Tentative = Graphite (8), External = calendar color (none)]
 Travel preferences: [home airport, airlines, cheapest vs. preferred, nonstop when possible?, red-eyes, airport arrival lead, buffer landing -> first meeting, hotels, ground transport]
 Prebriefs: [task / email / both] at [morning of, e.g. 7:30am]  (task = inside each "Call with" task; email = one morning email to yourself with all of today's briefs)
 Post-meeting: follow-up email draft [always for external calls / ask / never]
@@ -186,13 +186,13 @@ Every skill runs on a schedule by default. Asking directly ("debrief my call wit
 
 **How schedules get created:** setup creates them as Claude scheduled tasks, each one calling its skill by name, so an updated skill is used automatically on the next run. If the client's Claude can't create one-time runs, the per-call debrief falls back to the 5:45pm catch-all, and setup says so. If the client can't schedule at all, setup gives them the one phrase to say each morning and evening instead, and says so plainly.
 
-**Existing automations:** setup always asks what already does prep, debriefs, or scans, so the client never gets two briefs per call. Merge by job: keep whichever does each job better, and turn off only what the client approves.
+**Existing automations:** setup looks for what already does prep, debriefs, or scans (Claude scheduled tasks, repeating task patterns, recorder and email automations, other skills), suggests Keep theirs / Use ours / Run both for each, then asks about anything it couldn't see. So the client never gets two briefs per call. Turn off only what the client approves; anything Claude can't reach becomes a `Turn off [name]` task with steps, and the overlapping skill waits until it's done.
 
 ## 8. Delivery and review mechanics (so nothing is ambiguous)
 
 **Where things go (defaults; setup offers each):**
 - **Prebriefs** (setup offers these three; recommend **task**):
-  - **Task:** inside each `Call with [First Last]` task in the task tool (description, or a comment if the task already exists). Best when the exec lives in their task list: the brief sits next to the call.
+  - **Task:** inside each `Call with [First Last] - YYYY-MM-DD` task in the task tool (description, or a comment if the task already exists). Best when the exec lives in their task list: the brief sits next to the call.
   - **Email:** one morning email to the exec, subject `Prebriefs | [Day, date]`, with every brief for the day in time order. Best when the exec starts the day in their inbox. This is the one email the suite sends without asking each time, because the exec chose it, and only to the exec's own address.
   - **Both:** the brief in each task, plus the morning email.
 - **Debriefs:** tasks and LL questions in the task tool; facts on people pages; follow-up email in drafts if turned on. Anything that needs the exec goes in the End of day touchpoint (below); no separate review task.

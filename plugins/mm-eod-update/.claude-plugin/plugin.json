@@ -1,6 +1,6 @@
 {
     "name":  "mm-eod-update",
-    "version":  "0.4.2",
+    "version":  "0.4.3",
     "description":  "Mindmaven end-of-day update - every weekday afternoon, one skimmable summary of the day for the exec - confirmations first (what got done, booked, sent, or closed), then decisions as yes/no questions with the stated assumption, tomorrow at a glance, loops captured today, and anything not handled ...",
     "author":  {
                    "name":  "Mindmaven"

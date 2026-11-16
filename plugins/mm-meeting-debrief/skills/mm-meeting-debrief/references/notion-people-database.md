@@ -1,6 +1,8 @@
 # Notion People database (for users without a CRM)
 
-Create a database called **People** (offer to put it inside a page called `Relationships` so it's easy to find).
+Create a database called **People** inside a page called `Relationships`.
+
+**Private by default.** People pages hold personal details (spouses, kids, health, challenges), and most Notion workspaces are shared with a team. Always create the `Relationships` page in the user's **Private** section, never in a teamspace or a shared page, unless the user explicitly asks to share it. Then tell them in one line: "Your People database is in your Private section, so only you can see it. If your EA needs it, share the Relationships page with just them (Share > invite)." After creating it, fetch the page and confirm it isn't inside a teamspace; if it is, say so and move it to Private only with the user's OK.
 
 ## Properties
 

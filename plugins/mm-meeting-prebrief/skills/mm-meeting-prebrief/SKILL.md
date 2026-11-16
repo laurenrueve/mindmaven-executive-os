@@ -1,6 +1,6 @@
 ---
 name: mm-meeting-prebrief
-description: Mindmaven prebriefs, delivered the morning of each call - a skimmable brief for every call that day (external in full, internal in three lines) with the basics (name, title and company, meeting type, icebreaker, how you met, link or location, backup cell), agenda plus a silent agenda of promises to follow up on, the APPA bio from the person's page, what's owed both ways, recent threads, and a suggested goal. Delivered inside each "Call with [First Last]" task, as one morning email, or both. Short bullets under clear headers, no paragraphs, empty sections dropped. Part of the Mindmaven Executive OS. Use for "prep me for my call with X", "prebrief today", "brief me on today's meetings", "what do I know about X", "where do my prebriefs go", or the scheduled morning run.
+description: Mindmaven prebriefs, delivered the morning of each call - a skimmable brief for every call that day (external in full, internal in three lines) with the basics (name, title and company, meeting type, icebreaker, how you met, link or location, backup cell), agenda plus a silent agenda of promises to follow up on, the APPA bio from the person's page, what's owed both ways, recent threads, and a suggested goal. Delivered inside each "Call with [First Last] - YYYY-MM-DD" task, as one morning email, or both. Short bullets under clear headers, no paragraphs, empty sections dropped. Part of the Mindmaven Executive OS. Use for "prep me for my call with X", "prebrief today", "brief me on today's meetings", "what do I know about X", "where do my prebriefs go", or the scheduled morning run.
 ---
 
 # Meeting Prebrief (Mindmaven Executive OS)
@@ -13,11 +13,11 @@ Read `references/conventions.md` first (house rules, Preference Sheet, APPA, peo
 
 | Run | Covers | Goes to |
 |---|---|---|
-| Scheduled, weekdays morning of (default 7:30am) | Every call today, internal and external | Per `Prebriefs` in the Preference Sheet (conventions section 8): **task** (inside each `Call with [First Last]` task: the description if it's empty, otherwise a comment), **email** (one `Prebriefs \| [Day, date]` email to the exec with all of today's briefs in time order), or **both**. Default: task. |
+| Scheduled, weekdays morning of (default 7:30am) | Every call today, internal and external | Per `Prebriefs` in the Preference Sheet (conventions section 8): **task** (inside each `Call with [First Last] - YYYY-MM-DD` task: the description if it's empty, otherwise a comment), **email** (one `Prebriefs \| [Day, date]` email to the exec with all of today's briefs in time order), or **both**. Default: task. |
 | "Prep me for my call with Maria" | The next event with Maria | Right here in chat (and into its `Call with` task if one exists) |
 | "Where do my prebriefs go?" | n/a | Answer from the Preference Sheet in one line, with an example task link if one exists |
 
-If `Call tasks: yes` and a call has no `Call with` task yet (the debrief sweep normally creates them), create it: `Call with [First Last]`, due at the call time, in the Tasks project. Use the other person's first and last name; for a group, the main external person, or the meeting name if there isn't one.
+If `Call tasks: yes` and a call has no `Call with` task yet (the debrief sweep normally creates them), create it: `Call with [First Last] - YYYY-MM-DD`, due at the call time, in the Tasks project. Use the other person's first and last name; for a group, the main external person, or the meeting name if there isn't one.
 
 ## Step 1 - Pick the calls
 
@@ -30,7 +30,10 @@ If `Call tasks: yes` and a call has no `Call with` task yet (the debrief sweep n
 ## Step 2 - Gather, per external attendee
 
 1. **People page:** Quick glance, We Met, Title, Company, Location, LinkedIn, Cell, APPA sections, Upcoming moments, Open commitments, last 2-3 Running notes.
-2. **No page:** light public research (role, company, one or two recent public items). Label it "public sources". Never research their personal life online.
+2. **New contact (no page):**
+   - **Context from email, 1-2 lines:** how this meeting came about (who introduced them, what they asked for, what was already discussed), from the email thread that set it up. This line goes first in WHO.
+   - **LinkedIn link only if you're confident it's the right person:** name **and** company (or title) match what's in the invite or email. If there's any doubt (common name, no company match), leave the link out. Never guess (house rule 2).
+   - Light public research: role, company, one or two recent public items. Label it "public sources". Never research their personal life online.
 3. **Tasks:** open tasks, `LL | Did...?` questions, and `Schedule |` tasks involving them, both directions. Apply house rule 5: don't list something as owed if any source shows it's done.
 4. **Email** threads with them in the last 30 days; note anything unanswered on either side.
 5. **Chat** (if connected): recent relevant messages.
@@ -51,7 +54,8 @@ Format rules, no exceptions:
 Backup: [cell]  ([who calls whom, for phone calls])
 
 WHO
-- [First Last], [Title] at [Company]
+- [New contacts only: 1-2 lines on how this meeting came about, from email]
+- [First Last], [Title] at [Company]  [LinkedIn link, only if confident it's them]
 - Met: [how, when, who introduced] ([first meeting / met N times, last date])
 - Icebreaker: [one line from interests or a recent moment]
 
