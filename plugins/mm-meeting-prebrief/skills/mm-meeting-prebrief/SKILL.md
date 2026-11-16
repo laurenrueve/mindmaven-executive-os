@@ -13,7 +13,7 @@ Read `references/conventions.md` first (house rules, Preference Sheet, APPA, peo
 
 | Run | Covers | Goes to |
 |---|---|---|
-| Scheduled, weekdays morning of (default 7:30am) | Every call today, internal and external | Per `Prebriefs` in the Preference Sheet (conventions section 8): **task** (inside each `Call with [First Last] - YYYY-MM-DD` task: the description if it's empty, otherwise a comment), **email** (one `Prebriefs \| [Day, date]` email to the exec with all of today's briefs in time order), or **both**. Default: task. |
+| Scheduled, weekdays morning of (default 7:40am, 10 minutes after the 7:30am debrief sweep that creates the `Call with` tasks) | Every call today, internal and external | Per `Prebriefs` in the Preference Sheet (conventions section 8): **task** (inside each `Call with [First Last] - YYYY-MM-DD` task: the description if it's empty, otherwise a comment), **email** (one `Prebriefs \| [Day, date]` email to the exec with all of today's briefs in time order), or **both**. Default: task. |
 | "Prep me for my call with Maria" | The next event with Maria | Right here in chat (and into its `Call with` task if one exists) |
 | "Where do my prebriefs go?" | n/a | Answer from the Preference Sheet in one line, with an example task link if one exists |
 

@@ -63,7 +63,7 @@ The exec hears from the suite twice a day (conventions section 8). The delegate 
 
 | When | EA | Executive |
 |---|---|---|
-| Weekday 7:30 | Prebriefs land in the call tasks | Reads them before each call |
+| Weekday 7:40 | Prebriefs land in the call tasks | Reads them before each call |
 | Morning (by 9:30) | Works their Morning touchpoint: the morning scan, the loops list (sends nudges, closes loops) | **Morning touchpoint:** clears own items (5 min); Fridays, answers the calendar review |
 | After each call | Takes logistics tasks from debriefs | Dictates or approves the debrief (2-5 min) |
 | Afternoon | Works tomorrow's upkeep list, sends confirmations | Nothing |
