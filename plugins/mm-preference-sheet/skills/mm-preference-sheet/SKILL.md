@@ -1,11 +1,13 @@
 ---
 name: mm-preference-sheet
-description: Builds and maintains Mindmaven's Executive Preference Document, the doc an EA works from - how the exec likes email written, calendar invites titled and colored, meetings scheduled and confirmed, travel booked, and what to never do. Reads the exec's calendar, sent email, and tasks first to pre-fill what it can (each item with a receipt), lets the EA fill what they know, then writes a short interview guide with only what's left for a 60-minute exec interview. Private by default. Works for any exec and EA, with or without the rest of the Mindmaven Executive OS. Use for "build a preference sheet for Maria", "preference doc", "I'm Maria's new EA", "onboard me to my exec", "prep my preference interview", "add to Maria's preference sheet: she switched to Delta", "how does Maria like her invites titled", or any EA onboarding, even if they don't say "preference". Not for setting up the Executive OS itself (mm-setup).
+description: Builds and maintains Mindmaven's Executive Preference Document: the exec's operating manual, written down once - how they like email written, calendar invites titled and colored, meetings scheduled and confirmed, travel booked, and what to never do. Used by the exec's EA if they have one, by Claude itself, and by anyone who helps later. Reads the exec's calendar, sent email, and tasks first to pre-fill what it can (each item with a receipt), then asks only what's left: live with the exec, or as a 60-minute interview guide for an EA. Private by default. For any exec, with or without an EA. Use for "build a preference sheet for Maria", "preference doc", "I'm Maria's new EA", "onboard me to my exec", "prep my preference interview", "add to Maria's preference sheet: she switched to Delta", "how does Maria like her invites titled", "write down how I work", "my operating manual", or any EA onboarding, even if they don't say "preference". Not for setting up the Executive OS itself (mm-setup).
 ---
 
 # Preference Sheet builder (Mindmaven Executive OS)
 
-An EA is only as good as what they know about their exec. Mindmaven's Executive Preference Document captures it in one place. This skill builds that document fast by reading before asking, and keeps it current.
+Mindmaven's Executive Preference Document is the exec's operating manual: how they work, written down once. An EA is only as good as what they know about their exec, and so is Claude: every draft, brief, and calendar fix in the Executive OS gets better when this document exists. It's also ready the day the exec brings on an EA, an assistant, or a colleague to help. This skill builds it fast by reading before asking, and keeps it current.
+
+**Without an EA:** the exec runs it themselves. Skip Step 2 and run Step 3 live, one question at a time; with most fields pre-filled, it usually takes 30-40 minutes.
 
 Read `references/conventions.md` for the house rules (section 0). They all apply: every fact has a receipt, empty beats wrong, write only where allowed. The document structure is in `references/preference-document.md`. Follow it section by section; drop nothing, and add sections the exec needs.
 

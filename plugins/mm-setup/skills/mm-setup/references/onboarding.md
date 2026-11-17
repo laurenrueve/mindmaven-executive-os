@@ -23,7 +23,7 @@ Explain what each skill is for, one line each. List only the skills this exec in
 > - **Calendar upkeep:** tomorrow's calendar checked every afternoon, confirmations drafted.
 > - **End-of-day update:** a short summary with only the decisions that need you.
 > - **Calendar review:** every Friday, next week checked and fixed, plus trips and big events 2-3 weeks out.
-> - **Preference Sheet:** builds the full preference document your EA works from: how you like email written, invites titled, meetings scheduled, travel booked.
+> - **Preference Sheet:** your operating manual: how you like email written, invites titled, meetings scheduled, travel booked, written down once. Claude uses it, and so will any EA or assistant you bring on.
 >
 > You'll hear from it **twice a day**: once in the morning and once at the end of the day. Setup takes about 35 minutes, and by the end you'll know exactly what you get tomorrow, where, and what to do with it.
 
@@ -33,7 +33,7 @@ Explain what each skill is for, one line each. List only the skills this exec in
    - **Recorder:** "What do you record your meetings in? **Granola, Fathom, Quill, or other (please enter).**" If you see recorder links or bots on the calendar, add: "I see [Fathom] links on your calendar. Is that right?" If they don't record, say dictation is covered in Part 3.
    - **Task tool:** "Where do you want your action items to go? **Asana, Notion, ClickUp, Trello, Microsoft To Do, or other (please enter).**"
 2. **Connect, in one go.** Check which connectors are already on. For the missing ones among calendar, email, the task tool they named, the recorder they named, and chat, give the steps from `tool-guides.md` all at once ("Turn these on, then say done"). Guide them through connecting the recorder step by step. Test each with real data and show one line per tool ("Calendar: I can see your 6 meetings tomorrow").
-3. **Use the Preference Document if there is one.** If `mm-preference-sheet` has built an Executive Preference Document for this exec (or they have their own), read it first and take every confirmed answer from it; ask only what it doesn't cover. If there isn't one and the exec has an EA, mention: "Your EA can build your full Preference Document with the Preference Sheet skill; it feeds this setup too."
+3. **Use the Preference Document if there is one.** If `mm-preference-sheet` has built an Executive Preference Document for this exec (or they have their own), read it first and take every confirmed answer from it; ask only what it doesn't cover. If there isn't one, mention it to everyone: "The Preference Sheet skill writes down how you work in one document, your operating manual. It makes every draft and brief more like you, and it's ready the day you bring on help. With an EA, they build it with you; without one, it takes about 30-40 minutes with me." Offer it; never push it.
 4. **Read, then propose.** Look at the last 4 weeks of calendar and the task tool and propose the Preference Sheet as one short list:
    - Working hours, earliest start, latest end (from the actual first and last meetings)
    - Days they take external meetings (from patterns)

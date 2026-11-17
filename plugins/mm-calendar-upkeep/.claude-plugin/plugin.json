@@ -1,6 +1,6 @@
 {
     "name":  "mm-calendar-upkeep",
-    "version":  "0.5.2",
+    "version":  "0.5.3",
     "description":  "Mindmaven daily calendar maintenance for the next business day - every weekday afternoon it checks tomorrow\u0027s events for missing video links, addresses, or phone numbers, invitees who haven\u0027t accepted (especially outside preferred hours), overlaps, stale tentative (T) holds, last-minute changes i...",
     "author":  {
                    "name":  "Mindmaven"

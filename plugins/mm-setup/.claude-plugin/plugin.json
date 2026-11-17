@@ -1,6 +1,6 @@
 {
     "name":  "mm-setup",
-    "version":  "0.5.2",
+    "version":  "0.5.3",
     "description":  "Set up, onboard, and change settings for the Mindmaven Executive OS, a connected suite of scheduled skills (prebriefs, debriefs, morning scans, loop manager, eDrafts, daily calendar upkeep, end-of-day update, Friday calendar review) that work with the user\u0027s EA or delegate.",
     "author":  {
                    "name":  "Mindmaven"

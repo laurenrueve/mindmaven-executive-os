@@ -1,6 +1,6 @@
 # Mindmaven Executive OS: shared conventions
 
-**This copy of the suite is version 0.5.2.** (Compare it with `Suite version` in the Preference Sheet; see "After an update" in section 1.)
+**This copy of the suite is version 0.5.3.** (Compare it with `Suite version` in the Preference Sheet; see "After an update" in section 1.)
 
 Every skill in the suite follows this file. It keeps the skills working as one system: one Preference Sheet, one set of task and loop leverage rules, one people database, one way of handling the EA, and one set of house rules.
 
@@ -17,7 +17,7 @@ The suite:
 | `mm-loop-manager` | Daily pass on due `LL \| Did...?` questions: closed or not, nudge drafts, intro stages | tasks, email, chat, calendar | LL updates, nudge drafts |
 | `mm-calendar-upkeep` | Daily check of tomorrow: links, responses, holds, changes; confirmation drafts | calendar, email, tasks | a review; own-calendar fixes; drafts |
 | `mm-edraft` | Voice note or one-liner -> send-ready email draft in the exec's voice | email, people pages | email drafts, `Edraft \|` tasks |
-| `mm-preference-sheet` | Builds and maintains the Executive Preference Document an EA works from: reads calendar and email first, then a short interview guide | calendar, email, tasks, notes | the preference document (private), an interview guide, optional Preference Sheet updates on approval |
+| `mm-preference-sheet` | Builds and maintains the Executive Preference Document, the exec's operating manual used by Claude and any EA: reads calendar and email first, then asks only what's left (live, or as an EA interview guide) | calendar, email, tasks, notes | the preference document (private), an interview guide, optional Preference Sheet updates on approval |
 | `mm-eod-update` | End-of-day summary: confirmations, yes/no decisions, tomorrow, loops captured | everything from today | the EOD (task or email) |
 
 How they feed each other: debriefs and the email loop scan fill the **people pages** and create **LL tasks**. The missed-task scan fills the **task tool**. Prebriefs and the calendar review **read** all of that, so the user walks into every meeting and every week knowing what's owed, what's coming up in people's lives, and what needs fixing.
