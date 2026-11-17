@@ -18,7 +18,7 @@ Read `references/conventions.md` first. Then:
 | "Set up my executive OS" (or any setup request) | **First, look for an existing sheet**: Claude memory, then the `Executive OS \| Preference Sheet` backup (`conventions.md` section 1, "Keeping preferences safe"). Found: `onboarding.md`, "Welcome back". Not found: `onboarding.md`, Parts 1-4 |
 | "Continue my setup" | Pick up at the first Part not yet saved |
 | "Set up [skill]" | `onboarding.md`, "Adding one skill later" |
-| "Update my setup" / change one setting | Show the current Preference Sheet, change only what they asked, update any affected schedule, save, show the new sheet |
+| "Update my setup" / change one setting | **First, the update check:** compare `Suite version` in the sheet with this copy's version (top of `conventions.md`). If newer, read `whats-new.md` and say what's new in plain words, ask only the new settings, offer any new scheduled runs and create them on yes, then set `Suite version`. Also check every run in section 7 that their sheet says is on actually exists, and offer to recreate any that are missing. If they're already current, say so in one line ("You're on the latest version, [x.y.z]"). Then change only what they asked, update any affected schedule, save both copies, and show the changed lines. |
 | "How does my EA fit in?" | The three-mode table in `references/ea-playbook.md`, with the example |
 | "Onboard my EA" | `onboarding.md`, "Delegate onboarding" |
 | "What can this do?" / "What happens when?" / "How does my day work?" | The day plan card (`onboarding.md` Part 4 step 4) with their real times, places, and tomorrow's real meetings. "Show me the [workflow]" -> that workflow's preview card (Part 4 step 3) |

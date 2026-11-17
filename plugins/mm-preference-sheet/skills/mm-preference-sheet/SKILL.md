@@ -28,7 +28,7 @@ Read only what's connected. For each field you fill, write the value **and** its
 | **Task tool** | Projects and naming conventions; what's delegated today |
 | **Existing EA emails** (if the EA is the user) | Confirmation email template in use; how scheduling requests are handled |
 
-Never pull or store: passwords, payment card numbers, government ID numbers, health details. Travel loyalty numbers go in only if the exec says yes in Step 3.
+Never pull or store: passwords, payment card numbers, card expiration dates or security codes, government ID numbers (passport, license, SSN), health details. For a card, record at most the brand and last 4 digits ("Amex ending 0005") and where the full details are kept (e.g. the team password manager). For a passport, record only its expiration date, for renewal reminders. Travel loyalty numbers go in only if the exec says yes in Step 3.
 
 Show the user a short summary: "From 4 weeks of calendar and 30 sent emails I pre-filled 41 fields (each with its source). 23 are left for you and Maria." Then move on.
 
@@ -78,7 +78,7 @@ Create it where Step 0 said, private by default. Show the link and a three-line 
 ## Self-check before finishing
 
 - [ ] Every pre-filled value has a receipt, and every inferred one says `(to confirm)`.
-- [ ] Nothing sensitive stored (passwords, cards, IDs, health); loyalty numbers only with a yes.
+- [ ] Nothing sensitive stored (passwords, card numbers, card expiry or security codes, ID numbers, health); cards as brand + last 4 at most; loyalty numbers only with a yes.
 - [ ] The interview guide asks nothing already confirmed and fits 60 minutes.
 - [ ] The document is in a private location and the user has the link.
 - [ ] Colors use exact Google event names and IDs.

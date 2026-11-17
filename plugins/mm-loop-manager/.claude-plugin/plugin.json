@@ -1,6 +1,6 @@
 {
     "name":  "mm-loop-manager",
-    "version":  "0.5.0",
+    "version":  "0.5.1",
     "description":  "Mindmaven Loop Leverage manager - the daily tickler-file pass.",
     "author":  {
                    "name":  "Mindmaven"

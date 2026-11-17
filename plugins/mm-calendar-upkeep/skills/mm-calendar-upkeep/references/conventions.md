@@ -1,6 +1,6 @@
 # Mindmaven Executive OS: shared conventions
 
-**This copy of the suite is version 0.5.0.** (Compare it with `Suite version` in the Preference Sheet; see "After an update" in section 1.)
+**This copy of the suite is version 0.5.1.** (Compare it with `Suite version` in the Preference Sheet; see "After an update" in section 1.)
 
 Every skill in the suite follows this file. It keeps the skills working as one system: one Preference Sheet, one set of task and loop leverage rules, one people database, one way of handling the EA, and one set of house rules.
 
@@ -86,7 +86,7 @@ The Preference Sheet lives **outside** the skill files, so re-downloading a zip,
 
 **If a field this skill needs is missing:** ask for just that field (interactive runs), then save it back (both copies).
 
-**After an update (new version):** each skill knows its own version (the `Suite version` it ships with). If the sheet's `Suite version` is older, compare the sheet against the template above and find only the **new** fields. Interactive runs ask just those, one at a time with a default, then save and update `Suite version`. Scheduled runs use the default for each new field, keep everything else exactly as it was, and add one line to the Morning review: "New setting in this update: [field], set to [default]. Say 'update my setup' to change it." Never re-ask a field that already has a value.
+**After an update (new version):** each skill knows its own version (the `Suite version` it ships with). If the sheet's `Suite version` is older, read `whats-new.md` for every version in between, and compare the sheet against the template above to find only the **new** fields. **New scheduled runs** listed there: interactive runs offer to create them ("This update adds an hourly prebrief check. Turn it on?") and create them on yes; scheduled runs never create schedules, they add one line to the Morning review ("New in this update: [run]. Say 'update my setup' to turn it on."). Interactive runs ask just those, one at a time with a default, then save and update `Suite version`. Scheduled runs use the default for each new field, keep everything else exactly as it was, and add one line to the Morning review: "New setting in this update: [field], set to [default]. Say 'update my setup' to change it." Never re-ask a field that already has a value.
 
 ## 2. Task rules (every skill that creates tasks)
 
