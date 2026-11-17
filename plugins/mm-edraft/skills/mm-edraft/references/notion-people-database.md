@@ -75,7 +75,7 @@ When creating a new person, build the page with this template:
 ## Views to create
 
 1. **All people** (table, sorted by Last met, newest first).
-2. **Upcoming touches** (table, filtered to Next touch is within the next 14 days, sorted ascending). This is the "who should I reach out to this week" view.
+2. **Upcoming touches** (table, filtered to Next touch is within the next 7 days, sorted ascending). This is the "who should I reach out to this week" view. Use 7 days: a rolling 14-day window couldn't be built with Notion's relative date filters in testing.
 
 After creating it, add the attendee from the first real debrief so the user sees a filled-in example.
 

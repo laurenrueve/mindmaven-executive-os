@@ -36,7 +36,7 @@ Explain what each skill is for, one line each. List only the skills this exec in
    - Working hours, earliest start, latest end (from the actual first and last meetings)
    - Days they take external meetings (from patterns)
    - Typical buffers and longest back-to-back stretch
-   - Lunch and protected blocks (recurring holds)
+   - Lunch and protected blocks (recurring holds). **If they name a protected block that isn't on the calendar** (e.g. "Tue/Thu 12-1 is childcare"), offer: "Want me to add that as a recurring event on your calendar so nothing gets booked over it? Only you will see it." On yes, create it with no attendees, using their invite naming and colors (an own-only change).
    - Invite naming and colors they already use
    - Project and naming they already use in their task tool (e.g. existing `Call with` tasks)
    Then ask: **"Here's what I see. What should change?"** Fix only what they correct.
@@ -69,7 +69,7 @@ Explain what each skill is for, one line each. List only the skills this exec in
    - **Other installed skills** that cover the same job (another debrief, prebrief, or loop skill).
    Then show one short table: what you found | what it does | which Executive OS skill overlaps | **your suggestion: Keep theirs / Use ours / Run both** (with one line why). Ask "OK to go with these?" and also ask "Anything else that runs on its own that I couldn't see, like something on your computer or a tool your assistant set up?"
    - **Turning things off:** turn off only what they approve, and only things Claude can reach (its own scheduled tasks, skills). Anything Claude can't reach (an automation running on their computer, like Windows Task Scheduler or a Mac app, a Zapier or Make zap, a recorder setting) gets a `Turn off [name]` task with the exact steps, and the overlapping Executive OS skill stays off until they confirm it's done, so they never get two of the same thing.
-5. **Changes without asking:** confirm `Writes allowed` with defaults: create tasks yes, update people pages yes, create email drafts yes, calendar changes only you see (colors, your own blocks) made automatically and listed as "Already fixed" so you can undo, and calendar changes that notify others always ask. Scan mode: review first for 2 weeks (explain the `Suggested` section: "Delete what's wrong; the rest moves into your list.").
+5. **Changes without asking:** confirm `Writes allowed` with defaults: create tasks yes, update people pages yes, create email drafts yes, calendar changes only you see (colors, your own blocks) made automatically and listed as "Already fixed" so you can undo, and calendar changes that notify others always ask. Scan mode: suggested first for 2 weeks (explain: "For the first two weeks, everything I find is created right away in a Suggested section. Delete what's wrong; the rest moves into your list the next day. After that, it goes straight in.").
 
 Save the Preference Sheet (`conventions.md` section 1) to Claude memory if it's on; otherwise project instructions; otherwise ask them to paste it into Settings > Profile. **Also save the backup** (the `Executive OS | Preference Sheet` task, "Keeping preferences safe") and tell them in one line: "I saved a backup of your settings as a task called Executive OS | Preference Sheet. Don't delete it: if you ever reinstall or update, I'll restore your settings from it." Show the sheet.
 

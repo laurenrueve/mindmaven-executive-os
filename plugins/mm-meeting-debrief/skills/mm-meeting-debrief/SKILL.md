@@ -76,7 +76,7 @@ Then a **second pass**: re-read top to bottom looking only for what the first pa
 
 ## Step 3 - Review
 
-Interactive runs: show this, then ask "Anything to change, remove, or reassign before I send these over?" Scheduled runs: create only what Writes allowed + Scan mode permit, and put the rest under Needs you.
+Interactive runs: show this, then ask "Anything to change, remove, or reassign before I send these over?" Scheduled runs: create first, then report. Create everything `Writes allowed` permits right away (during the first 2 weeks, in the `Suggested` section per `Scan mode`), then put anything that needs the exec in the Debriefs section of the End of day review. Only what `Writes allowed` forbids becomes a suggestion in the report instead.
 
 ```
 MEETING DEBRIEF | [Name] ([Company]) - [meeting title], [date]
@@ -118,15 +118,16 @@ Only where Writes allowed permits.
 
 If `mm-edraft` is installed, hand the follow-up to it (type: follow-up after a meeting) so drafts share one voice and the 48-hour unsent check. Otherwise follow the rules below.
 
-When to draft: per `Post-meeting` in the Preference Sheet (default: always for external calls, never for internal), or whenever the dictation or the user asks. In "ask" mode, interactive runs offer it; scheduled runs list it under Needs you. Draft (never send) the follow-up email in Mindmaven's structure:
-1. Greeting
-2. Positive impact: something specific from the meeting
-3. Common ground
-4. Key takeaways and next steps (both sides' commitments)
-5. Future-pacing: what happens next and when
-6. Sign-off in the exec's own style (copy it from a recent sent email)
+When to draft: per `Post-meeting` in the Preference Sheet (default: always for external calls, never for internal), or whenever the dictation or the user asks. In "ask" mode, interactive runs offer it; scheduled runs list it under Needs you. Draft (never send) the follow-up email in Mindmaven's 7-part structure:
+1. Subject line: clear and specific to this meeting
+2. Greeting
+3. Positive impact: something specific from the meeting
+4. Common ground
+5. Key takeaways and next steps (both sides' commitments)
+6. Future-pacing: what happens next and when
+7. Sign-off in the exec's own style (copy it from a recent sent email)
 
-Use relative time references ("as we discussed Tuesday"), a strong subject line, and for introductions the subject `Introduction [Name] <> [Name]`. Mark anything inaudible as `_____` and any guess as `??guess??`, and tell the user. Never send in the exec's name; the exec presses send. If the Preference Sheet says the EA is BCC'd on sends, leave a note to BCC them.
+Use relative time references ("as we discussed Tuesday"), and for introductions the subject `Introduction [Name] <> [Name]`. Mark anything inaudible as `_____` and any guess as `??guess??`, and tell the user. Never send in the exec's name; the exec presses send. If the Preference Sheet says the EA is BCC'd on sends, leave a note to BCC them.
 
 ## Step 6 - Report
 

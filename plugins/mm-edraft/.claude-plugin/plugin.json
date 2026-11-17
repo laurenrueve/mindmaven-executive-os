@@ -1,6 +1,6 @@
 {
     "name":  "mm-edraft",
-    "version":  "0.4.7",
+    "version":  "0.4.8",
     "description":  "Mindmaven eDrafts - turn the exec\u0027s voice note, rough notes, or a one-line ask (\"draft a follow-up to Maria\", \"intro Sam to Maria\", \"say no to the panel invite nicely\") into a polished email draft in the exec\u0027s own voice, ready to send.",
     "author":  {
                    "name":  "Mindmaven"

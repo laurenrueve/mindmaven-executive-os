@@ -32,7 +32,7 @@ On first use, read 20 recent sent emails and note: greeting style, sign-off and 
 
 | Type | Structure |
 |---|---|
-| **Follow-up after a meeting** | 1. Greeting. 2. Positive impact: one specific thing from the meeting. 3. Common ground. 4. Key takeaways and next steps, both sides. 5. Future-pacing: what happens next and when. 6. Sign-off. |
+| **Follow-up after a meeting** | Mindmaven's 7 parts: 1. Subject line, clear and specific to the meeting. 2. Greeting. 3. Positive impact: one specific thing from the meeting. 4. Common ground. 5. Key takeaways and next steps, both sides. 6. Future-pacing: what happens next and when. 7. Sign-off. |
 | **Introduction (double opt-in)** | First, a short opt-in ask to the person receiving the intro ("Would you be open to meeting [A]? Here's why..."). Only after a yes: the intro email, subject `Introduction [First Last] <> [First Last]`, one line on each person and why they should talk, then the exec steps back. Create the `LL \| Did [person] reply to the opt-in?` question. |
 | **Saying no** (Art of No) | Pick the softest strategy that's true: **No** / **No, not now** / **Yes, but not now** / **Yes, but not me** (redirect to someone else). Soften with a real reason, add something positive, and offer the alternative if there is one. |
 | **Reply** | Answer what was asked, first line. Keep it shorter than the email being answered. Thread it as a reply. |

@@ -50,7 +50,7 @@ Closed -> drop it. If an open task covers it, list it under "Looks done" with th
 ## Step 5 - Deliver
 
 Per `Scan mode` and conventions section 8:
-- **Review first (first 2 weeks):** create everything in `Suggested`, plus the **Morning scan** section of today's `Review | Morning [date]` touchpoint (shared with the missed-task scan), which opens with: *"Delete anything that's wrong. Anything still in Suggested tomorrow moves into your list."*
+- **Suggested first (first 2 weeks):** create everything right away, in `Suggested`, plus the **Morning scan** section of today's `Review | Morning [date]` touchpoint (shared with the missed-task scan), which opens with: *"Delete anything that's wrong. Anything still in Suggested tomorrow moves into your list."*
 - **Auto-create:** create everything directly and list it in the same Morning scan section for reference.
 
 Morning scan section format (skimmable; empty sections dropped):

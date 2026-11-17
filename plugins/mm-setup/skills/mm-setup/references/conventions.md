@@ -1,6 +1,6 @@
 # Mindmaven Executive OS: shared conventions
 
-**This copy of the suite is version 0.4.7.** (Compare it with `Suite version` in the Preference Sheet; see "After an update" in section 1.)
+**This copy of the suite is version 0.4.8.** (Compare it with `Suite version` in the Preference Sheet; see "After an update" in section 1.)
 
 Every skill in the suite follows this file. It keeps the skills working as one system: one Preference Sheet, one set of task and loop leverage rules, one people database, one way of handling the EA, and one set of house rules.
 
@@ -27,7 +27,7 @@ How they feed each other: debriefs and the email loop scan fill the **people pag
 2. **Empty beats wrong.** If you're not sure, leave it out or mark it unknown. A blank field costs nothing; a wrong name in a client's people page costs trust.
 3. **Scheduled runs never ask questions.** When a skill runs on a schedule, it does everything it safely can, then puts anything that needs the user under **Needs you** in its report. It never stops to wait for an answer. Interactive runs may ask, one question at a time.
 4. **Write outside Claude only where the Preference Sheet allows it.** Creating tasks, editing pages, drafting email, and changing calendars each need to be allowed in the Preference Sheet (`Writes allowed`). If a write isn't allowed, put it in the report as a suggestion instead.
-5. **Check everywhere before you suggest or nudge.** Before suggesting a task, an LL question, or a nudge, and before reporting something as still open, look for evidence it already happened in **every** connected source: the user's email (sent and received), **all** Slack or Teams conversations the user can see (including channels and threads where someone else confirmed it, e.g. a colleague posting "Dana paid"), task comments and completed tasks, the calendar, and the person's page. Found evidence -> don't suggest it; if a task is still open, list it under "Looks done" with the receipt.
+5. **Check everywhere before you suggest or nudge.** Before suggesting a task, an LL question, or a nudge, and before reporting something as still open, look for evidence it already happened in **every** connected source: the user's email (sent and received), **all** Slack or Teams conversations the user can see (including channels and threads where someone else confirmed it, e.g. a colleague posting "Dana paid"), task comments and completed tasks, the calendar, the person's page, **meeting recordings** (recorder transcripts and summaries, e.g. "I sent it this morning" said on a call), and **connected notes and docs** (Notion pages, Google Docs) that mention the person and topic. Found evidence -> don't suggest it; if a task is still open, list it under "Looks done" with the receipt.
 6. **Every output says exactly what to do next.** Anything delivered to the user (a review task, a brief, a report) opens with one line saying what action is expected and what happens if they do nothing. Each item offers at most three choices, written as the literal action ("Delete it", "Reply Y", "Move to Thursday"). Prefer designs where the user only acts on exceptions (section 8).
 
 ## 1. The Preference Sheet
@@ -60,7 +60,7 @@ Prebriefs: [task / email / both] at [morning of, e.g. 7:40am, 10 min after the d
 Post-meeting: follow-up email draft [always for external calls / ask / never]
 Delivery (the two daily touchpoints, section 8): [task: "Review | Morning" + "Review | End of day" / email to me]  ready by [9:30am] and [4:45pm]
 Writes allowed: [tasks Y/N] [people pages Y/N] [email drafts Y/N] [complete LLs with proof Y/N] [calendar: own-only automatic (default: changes only the exec sees, like colors and their own blocks, are made and listed as "Already fixed"; anything others see needs a yes) / with approval (everything needs a yes) / no]
-Scan mode: [review first (first 2 weeks) / auto-create]
+Scan mode: [suggested first (first 2 weeks: items are created right away in a Suggested section; delete mistakes, the rest moves in the next day) / auto-create (created straight into the list)]
 Schedules (all on by default, section 7):
   Debrief sweep [weekdays 7:30am] -> each call debriefed [10] min after it ends  |  Debrief catch-all [weekdays 5:45pm]
   Prebriefs [weekdays 7:40am, morning of, always 10 min after the sweep]  |  Daily scans: email loop + missed tasks [weekdays 8:45am]  |  Loop manager [weekdays 9:15am]
@@ -196,6 +196,13 @@ Every skill runs on a schedule by default. Asking directly ("debrief my call wit
 | Calendar upkeep | Weekdays 3pm | Tomorrow (Monday, on Fridays): fixes, decisions, confirmation drafts. |
 | EOD update | Weekdays 4:30pm (delegate) / 4:45pm (no delegate) | The day's confirmations, decisions, tomorrow, loops captured. |
 | Calendar review | Fridays 9am | Next week + 2-3 week lookahead. |
+
+**Fit times to the exec's day.** The times above are defaults. Setup moves them to fit the exec's working hours and shows the list for a yes, keeping these rules so every output is ready when it's needed:
+- Prebriefs run 10 minutes after the debrief sweep, and both finish before the exec's first call.
+- Daily scans and the loop manager finish at least 15 minutes before the Morning review's ready-by time.
+- Calendar upkeep runs at least 30 minutes before the EOD update, and the EOD update finishes before the End of day review's ready-by time.
+- The debrief catch-all runs after the exec's last call of the day; eDraft pickups run midday and at the end of the day.
+- The Friday calendar review finishes before Friday's Morning review is ready.
 
 **How schedules get created:** setup creates them as Claude scheduled tasks, each one calling its skill by name, so an updated skill is used automatically on the next run. If the client's Claude can't create one-time runs, the per-call debrief falls back to the 5:45pm catch-all, and setup says so. If the client can't schedule at all, setup gives them the one phrase to say each morning and evening instead, and says so plainly.
 
