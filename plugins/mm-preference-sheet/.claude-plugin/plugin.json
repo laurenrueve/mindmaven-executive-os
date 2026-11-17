@@ -1,0 +1,8 @@
+{
+    "name":  "mm-preference-sheet",
+    "version":  "0.5.0",
+    "description":  "Builds and maintains Mindmaven\u0027s Executive Preference Document, the doc an EA works from - how the exec likes email written, calendar invites titled and colored, meetings scheduled and confirmed, travel booked, and what to never do.",
+    "author":  {
+                   "name":  "Mindmaven"
+               }
+}
