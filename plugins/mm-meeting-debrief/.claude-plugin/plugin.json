@@ -1,6 +1,6 @@
 {
     "name":  "mm-meeting-debrief",
-    "version":  "0.4.6",
+    "version":  "0.4.7",
     "description":  "Turn any meeting (a recording or the exec\u0027s own voice dictation) into a Mindmaven debrief in APPA format - Action items given and received, Professional Challenges, Personal Interests \u0026 Passions, About/Facts - then create tasks and yes/no loop leverage tasks in the task tool, update each attendee...",
     "author":  {
                    "name":  "Mindmaven"

@@ -1,4 +1,4 @@
-# Onboarding (about 30 minutes)
+# Onboarding (about 35 minutes)
 
 Design goals: clear, real, and no surprises.
 - **Clear:** the exec hears what each skill is for, answers a few direct questions (recorder, task tool, people notes), and sees each part of a real output explained.
@@ -24,7 +24,7 @@ Explain what each skill is for, one line each. List only the skills this exec in
 > - **End-of-day update:** a short summary with only the decisions that need you.
 > - **Calendar review:** every Friday, next week checked and fixed, plus trips and big events 2-3 weeks out.
 >
-> You'll hear from it **twice a day**: once in the morning and once at the end of the day. Setup takes about 30 minutes.
+> You'll hear from it **twice a day**: once in the morning and once at the end of the day. Setup takes about 35 minutes, and by the end you'll know exactly what you get tomorrow, where, and what to do with it.
 
 ## Part 2: Connect and confirm (10 minutes)
 
@@ -73,42 +73,64 @@ Explain what each skill is for, one line each. List only the skills this exec in
 
 Save the Preference Sheet (`conventions.md` section 1) to Claude memory if it's on; otherwise project instructions; otherwise ask them to paste it into Settings > Profile. **Also save the backup** (the `Executive OS | Preference Sheet` task, "Keeping preferences safe") and tell them in one line: "I saved a backup of your settings as a task called Executive OS | Preference Sheet. Don't delete it: if you ever reinstall or update, I'll restore your settings from it." Show the sheet.
 
-## Part 4: Turn it on (5 minutes)
+## Part 4: Turn it on and show exactly what happens (10 minutes)
 
 1. **Create the schedules** in `conventions.md` section 7, each calling its skill by name. Show the list with times. If one-time runs aren't available, say the per-call debrief falls back to the 5:45pm catch-all. If scheduling isn't available at all, say so plainly and give the two phrases to use instead ("good morning, run my Executive OS" and "debrief today's calls").
 2. **Offer the history backfill:** "Want me to go back through your last 2 weeks of meetings and email (or 30 / 90 days) to build people pages and find open loops and commitments you haven't captured? I'll put them in `Suggested` for you to review." If yes, run it now and report counts.
-3. **One live run, together, then walk through each part.** Run the most useful thing right now with real data: today's prebrief for their next external call, or a debrief of their last call. Open where it landed, then go through it section by section: what each section is, where it came from, and what they do with it ("This is your action items section. Each one is now a task in Asana, here. This one is a loop leverage question your delegate will check on Thursday..."). Ask "Any questions on this part?" before moving to the next section.
-4. **Tell them exactly what to expect** with this card, filled in with their real times, tools, and names:
+3. **Preview every workflow, one at a time, with their real data.** This is the most important part of setup: by the end, the exec should be able to say "tomorrow at 9 I get a task that looks like this, I do these two things, and this happens." Go through **every installed workflow** in the order they'll meet them in a day: prebrief, debrief, Morning review, eDraft, End of day review, Friday calendar review. Skip only ones not installed. For each one, show this card, filled in from **their real calendar, inbox, and people for tomorrow** (never made-up names; if there's no real example, say "for example, if you had a call with someone tomorrow" and use a real past one):
+
+   ```
+   [WORKFLOW NAME]
+   WHEN:       [tomorrow, Tue Nov 17, 7:42am]
+   WHERE:      [inside the Asana task "Call with Maria Garcia - 2026-11-17"]
+   IT LOOKS LIKE THIS:
+     [a short real preview, 5-10 lines, in the exact format they'll get:
+      the real task name, the real sections, real items from their data]
+   YOU DO:     [1-3 concrete actions with time, e.g. "Open it before your 11am call. 60-second read."]
+   THEN:       [what happens next because of what they did, e.g. "Delete a line and it's never suggested again. Leave it and it becomes a task tomorrow."]
+   IF YOU DO NOTHING: [e.g. "Nothing is sent and nothing shared changes."]
+   ```
+
+   After each card ask **"Make sense, or want to change anything about this one?"** and wait. Change only what they ask (save both copies), then go to the next card. Never show two cards at once.
+
+   Then **run one for real, right now**: the most useful one (today's or tomorrow's prebrief for their next external call, or a debrief of their last call). Open where it landed and point at each section in turn: "This section is X, it came from Y, and you do Z with it." Ask "Any questions on this part?" before the next section.
+
+4. **The day plan.** End with this card, filled in with their real times, tool names, task names, and their first real meeting tomorrow. Offer to also save it as an `Executive OS | How your day works` task so they can find it later (same project as the backup; never completed).
 
 ```
-WHAT HAPPENS NOW
-You hear from it twice a day. Everything else just lands where it belongs.
+YOUR DAY WITH THE EXECUTIVE OS
+You check two tasks a day. Everything else lands where it belongs.
 
-MORNING (ready by 9:30am) -> "Review | Morning" [task in Asana / email]
-  - Anything to fix before today's calls
-  - Morning scan: promises you didn't capture, open commitments, personal moments
-  - Loops that need you
-  - Fridays: next week's calendar review. Reply to each numbered item Y or N.
+TOMORROW, [Tue Nov 17]
+ [7:42am]  Your prebriefs are inside each call task.
+           YOU: open "Call with [Maria Garcia] - [2026-11-17]" before your [11am]. 60-second read.
+ [9:00am]  "Review | Morning [Tue Nov 17]" in [Asana].
+           YOU: delete anything wrong (2 min). Answer any numbered question Y or N.
+           THEN: what you keep becomes tasks; nudge drafts wait in [Gmail Drafts].
+ After each call (10 min later)
+           Action items and "LL | Did...?" questions appear in [Asana]; notes on the person in [People].
+           A follow-up email draft waits in [Gmail Drafts].
+           YOU: read the draft, edit, send. Nothing ever sends on its own.
+ [4:00pm]  "Review | End of day [Tue Nov 17]" in [Asana].
+           YOU: answer the Y/N decisions (2 min).
+           THEN: I make the "yes" changes and confirm in the task.
+ ANY TIME  Type or say "Edraft: [a few sentences]" -> a ready draft in [Gmail Drafts].
 
-END OF DAY (ready by 4:45pm) -> "Review | End of day" [task in Asana / email / from Jordan]
-  - End-of-day update: what got done, yes/no decisions, tomorrow at a glance
-  - Tomorrow's calendar fixes and confirmation drafts
-  - Anything from today's debriefs that needs you
+EVERY FRIDAY [8:23am]
+           Next week's calendar review, inside Friday's Morning review.
+           Changes only you see are already made (undo any). YOU: reply "1 Y, 2 N".
 
-LANDS ON ITS OWN (nothing to review)
-  - Prebriefs -> [inside each "Call with" task / one morning email / both]
-  - After each call: action items, follow-ups, notes on the person -> [Asana] + [People];
-    follow-up email -> [Gmail Drafts]
-  - Say "Edraft:" + a few sentences any time -> a send-ready email in [Gmail Drafts]
+[YOUR DELEGATE, JORDAN]
+           Gets their own Morning and End of day tasks: scheduling, nudges, loop checks.
+FIRST 2 WEEKS (until [Nov 30])
+           New items arrive as "Suggested": delete mistakes; the rest moves in the next day.
+IF YOU DO NOTHING
+           Nothing is sent, nothing anyone else sees changes.
 
-Your delegate [Jordan]
-  Gets their own Morning and End of day reviews: scheduling, nudges, "LL | Did...?" checks
-First 2 weeks
-  New items land in "Suggested" so you can delete mistakes. Then they go straight in.
-Change anything: say "update my setup".
+Change anything: say "update my setup". See this again: say "how does my day work?"
 ```
 
-5. Close: "The next thing you'll get is [first scheduled run, day and time]. Nothing else to do."
+5. Close: "The first thing you'll get is [first scheduled run, day and time]: [one line on what it is]. Nothing else to do today."
 
 ## Welcome back (a sheet or backup already exists)
 
@@ -117,7 +139,7 @@ Someone who reinstalled, updated, or said "set up my executive OS" again. Never 
 1. **Restore if needed.** If the sheet is only in the backup, put it back in memory first.
 2. **Say what you found**, in one short block: "Welcome back. I found your settings from [Last saved date]: [3-5 key lines, e.g. tasks in Asana, prebriefs in your call tasks, EA Jordan in Mode 1, reviews by 9:30am and 4:45pm]."
 3. **Ask one question:** "Keep these and just check everything's running, or change something?" Default: keep.
-   - **Keep:** check the connectors still work (one line per tool), check every schedule in section 7 exists and is on (recreate any that are missing, with their saved times), check the skills listed in `Skills on` are installed, ask only fields that are new since their `Suite version` ("After an update", section 1), then show the "What happens now" card. About 3 minutes.
+   - **Keep:** check the connectors still work (one line per tool), check every schedule in section 7 exists and is on (recreate any that are missing, with their saved times), check the skills listed in `Skills on` are installed, ask only fields that are new since their `Suite version` ("After an update", section 1), then show the day plan card. About 3 minutes.
    - **Change something:** go to "Update my setup" (show the sheet, change only what they name, show the changed lines, save both copies).
    - **Start over** (only if they say so explicitly): save the current sheet into the backup task as a comment titled "Previous settings [date]" first, so it can be brought back, then run Parts 1-4.
 
@@ -132,4 +154,4 @@ Run with the delegate present, or in the delegate's own Claude for Mode 2.
 
 ## Adding one skill later ("set up [skill]")
 
-Explain in one line what the skill is for (the Part 1 line). Check only the tools and Preference Sheet fields that skill needs, create its schedule, do one live run and walk through each part of it (Part 4 step 3), and show where it appears on the "What happens now" card.
+Explain in one line what the skill is for (the Part 1 line). Check only the tools and Preference Sheet fields that skill needs, create its schedule, do one live run and walk through each part of it (Part 4 step 3), and show its preview card (Part 4 step 3) and where it appears on the day plan.

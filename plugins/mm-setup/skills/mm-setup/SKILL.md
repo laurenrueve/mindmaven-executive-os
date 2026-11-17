@@ -9,7 +9,7 @@ The front door to the suite. Four jobs:
 1. **Explain the system** in under a minute.
 2. **Build one Preference Sheet** every skill reads (`references/conventions.md`, section 1), mostly by reading the exec's calendar and tools and asking them to correct it.
 3. **Turn it on:** create the schedules (`conventions.md` section 7), offer a history backfill, and run one thing live.
-4. **Set expectations:** end with the "What happens now" card, so the exec knows exactly what they'll get, when, and where.
+4. **Set expectations:** preview every workflow one at a time with their real data (what it looks like, what they do, what happens next), then end with the day plan card, so the exec knows exactly what they'll get tomorrow, where, and what to do with it.
 
 Read `references/conventions.md` first. Then:
 
@@ -21,6 +21,6 @@ Read `references/conventions.md` first. Then:
 | "Update my setup" / change one setting | Show the current Preference Sheet, change only what they asked, update any affected schedule, save, show the new sheet |
 | "How does my EA fit in?" | The three-mode table in `references/ea-playbook.md`, with the example |
 | "Onboard my EA" | `onboarding.md`, "Delegate onboarding" |
-| "What can this do?" / "What happens when?" | The "What happens now" card with their real times and places |
+| "What can this do?" / "What happens when?" / "How does my day work?" | The day plan card (`onboarding.md` Part 4 step 4) with their real times, places, and tomorrow's real meetings. "Show me the [workflow]" -> that workflow's preview card (Part 4 step 3) |
 
 Always one question at a time, with a suggested default. Use the exec's real meetings, emails, and people, never made-up examples. Always explain the delegate modes before asking which one they want.
