@@ -15,7 +15,7 @@ Read `references/conventions.md` first. Then:
 
 | The user says | Do this |
 |---|---|
-| First time (no `MINDMAVEN PREFERENCE SHEET` found) or "set up my executive OS" | `references/onboarding.md`, Parts 1-4 |
+| "Set up my executive OS" (or any setup request) | **First, look for an existing sheet**: Claude memory, then the `Executive OS \| Preference Sheet` backup (`conventions.md` section 1, "Keeping preferences safe"). Found: `onboarding.md`, "Welcome back". Not found: `onboarding.md`, Parts 1-4 |
 | "Continue my setup" | Pick up at the first Part not yet saved |
 | "Set up [skill]" | `onboarding.md`, "Adding one skill later" |
 | "Update my setup" / change one setting | Show the current Preference Sheet, change only what they asked, update any affected schedule, save, show the new sheet |

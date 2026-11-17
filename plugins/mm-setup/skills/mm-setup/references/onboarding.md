@@ -71,7 +71,7 @@ Explain what each skill is for, one line each. List only the skills this exec in
    - **Turning things off:** turn off only what they approve, and only things Claude can reach (its own scheduled tasks, skills). Anything Claude can't reach (an automation running on their computer, like Windows Task Scheduler or a Mac app, a Zapier or Make zap, a recorder setting) gets a `Turn off [name]` task with the exact steps, and the overlapping Executive OS skill stays off until they confirm it's done, so they never get two of the same thing.
 5. **Changes without asking:** confirm `Writes allowed` with defaults: create tasks yes, update people pages yes, create email drafts yes, calendar changes only you see (colors, your own blocks) made automatically and listed as "Already fixed" so you can undo, and calendar changes that notify others always ask. Scan mode: review first for 2 weeks (explain the `Suggested` section: "Delete what's wrong; the rest moves into your list.").
 
-Save the Preference Sheet (`conventions.md` section 1) to Claude memory if it's on; otherwise project instructions; otherwise ask them to paste it into Settings > Profile. Show it.
+Save the Preference Sheet (`conventions.md` section 1) to Claude memory if it's on; otherwise project instructions; otherwise ask them to paste it into Settings > Profile. **Also save the backup** (the `Executive OS | Preference Sheet` task, "Keeping preferences safe") and tell them in one line: "I saved a backup of your settings as a task called Executive OS | Preference Sheet. Don't delete it: if you ever reinstall or update, I'll restore your settings from it." Show the sheet.
 
 ## Part 4: Turn it on (5 minutes)
 
@@ -109,6 +109,17 @@ Change anything: say "update my setup".
 ```
 
 5. Close: "The next thing you'll get is [first scheduled run, day and time]. Nothing else to do."
+
+## Welcome back (a sheet or backup already exists)
+
+Someone who reinstalled, updated, or said "set up my executive OS" again. Never start over and never save over their settings without a yes.
+
+1. **Restore if needed.** If the sheet is only in the backup, put it back in memory first.
+2. **Say what you found**, in one short block: "Welcome back. I found your settings from [Last saved date]: [3-5 key lines, e.g. tasks in Asana, prebriefs in your call tasks, EA Jordan in Mode 1, reviews by 9:30am and 4:45pm]."
+3. **Ask one question:** "Keep these and just check everything's running, or change something?" Default: keep.
+   - **Keep:** check the connectors still work (one line per tool), check every schedule in section 7 exists and is on (recreate any that are missing, with their saved times), check the skills listed in `Skills on` are installed, ask only fields that are new since their `Suite version` ("After an update", section 1), then show the "What happens now" card. About 3 minutes.
+   - **Change something:** go to "Update my setup" (show the sheet, change only what they name, show the changed lines, save both copies).
+   - **Start over** (only if they say so explicitly): save the current sheet into the backup task as a comment titled "Previous settings [date]" first, so it can be brought back, then run Parts 1-4.
 
 ## Delegate onboarding ("onboard my EA")
 

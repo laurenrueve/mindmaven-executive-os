@@ -1,6 +1,6 @@
 {
     "name":  "mm-meeting-prebrief",
-    "version":  "0.4.5",
+    "version":  "0.4.6",
     "description":  "Mindmaven prebriefs, delivered the morning of each call - a skimmable brief for every call that day (external in full, internal in three lines) with the basics (name, title and company, meeting type, icebreaker, how you met, link or location, backup cell), agenda plus a silent agenda of promises ...",
     "author":  {
                    "name":  "Mindmaven"

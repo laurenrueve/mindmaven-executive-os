@@ -1,5 +1,7 @@
 # Mindmaven Executive OS: shared conventions
 
+**This copy of the suite is version 0.4.6.** (Compare it with `Suite version` in the Preference Sheet; see "After an update" in section 1.)
+
 Every skill in the suite follows this file. It keeps the skills working as one system: one Preference Sheet, one set of task and loop leverage rules, one people database, one way of handling the EA, and one set of house rules.
 
 The suite:
@@ -68,11 +70,22 @@ Delegate sends for me: [none, or written authorization for specific categories, 
 Existing automations: [anything already doing prep, debriefs, or scans, and which jobs it keeps]
 Last loop scan: [ISO date-time]  |  Last task scan: [ISO date-time]  |  Scan log: [link]
 Skills on: [list]  |  Suite version: [e.g. 0.3.0]
+Backup: [link to the "Executive OS | Preference Sheet" backup]  |  Last saved: [date]
 ```
 
-**If a skill runs and the Preference Sheet is missing:** if `mm-setup` is installed, say so and offer to run it. Otherwise ask only for the fields this skill needs, one question at a time, then save the partial sheet. Scheduled runs don't ask (house rule 3): they use safe defaults (review first, no writes) and list the missing fields under Needs you.
+### Keeping preferences safe (every skill)
 
-**If a field this skill needs is missing:** ask for just that field (interactive runs), then save it back.
+The Preference Sheet lives **outside** the skill files, so re-downloading a zip, updating the plugin, or reinstalling never touches it. Three rules keep it from being lost or overwritten:
+
+1. **Always two copies.** Every time any skill saves the sheet, it saves both: (a) Claude memory (or project instructions / profile preferences), and (b) the **backup**: one task in the task tool named `Executive OS | Preference Sheet`, with the full sheet in the description, in the same project as the Scan log, never completed or deleted. (If the task tool can't hold long text, use a private page in the People notes destination with the same name.) Update `Last saved` on both. Saving the backup is always allowed, even if `Writes allowed` says no tasks: it is the exec's own settings, and setup tells them it exists.
+2. **Never overwrite without showing what changes.** Before saving over an existing sheet, show only the lines that would change ("Prebriefs: task -> both") and save on yes. Scheduled runs never change existing values (house rule 3); they only fill `Last loop scan`-type fields and `Last saved`.
+3. **Restore before asking.** When the sheet isn't in memory, look for the backup first (open or completed tasks, then the private page). Found: put it back in memory, then continue. Interactive runs say in one line: "I restored your settings from your backup saved [date]." Scheduled runs restore silently and add one line to the Morning review.
+
+**If a skill runs and no sheet or backup can be found:** if `mm-setup` is installed, say so and offer to run it. Otherwise ask only for the fields this skill needs, one question at a time, then save the partial sheet (both copies). Scheduled runs don't ask (house rule 3): they use safe defaults (review first, no writes) and list the missing fields under Needs you.
+
+**If a field this skill needs is missing:** ask for just that field (interactive runs), then save it back (both copies).
+
+**After an update (new version):** each skill knows its own version (the `Suite version` it ships with). If the sheet's `Suite version` is older, compare the sheet against the template above and find only the **new** fields. Interactive runs ask just those, one at a time with a default, then save and update `Suite version`. Scheduled runs use the default for each new field, keep everything else exactly as it was, and add one line to the Morning review: "New setting in this update: [field], set to [default]. Say 'update my setup' to change it." Never re-ask a field that already has a value.
 
 ## 2. Task rules (every skill that creates tasks)
 
