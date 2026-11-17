@@ -105,6 +105,7 @@ You check two tasks a day. Everything else lands where it belongs.
 TOMORROW, [Tue Nov 17]
  [7:42am]  Your prebriefs are inside each call task.
            YOU: open "Call with [Maria Garcia] - [2026-11-17]" before your [11am]. 60-second read.
+           A call added or moved during the day gets its brief (and task) within the hour.
  [9:00am]  "Review | Morning [Tue Nov 17]" in [Asana].
            YOU: delete anything wrong (2 min). Answer any numbered question Y or N.
            THEN: what you keep becomes tasks; nudge drafts wait in [Gmail Drafts].

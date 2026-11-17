@@ -1,6 +1,6 @@
 # Mindmaven Executive OS: shared conventions
 
-**This copy of the suite is version 0.4.9.** (Compare it with `Suite version` in the Preference Sheet; see "After an update" in section 1.)
+**This copy of the suite is version 0.4.10.** (Compare it with `Suite version` in the Preference Sheet; see "After an update" in section 1.)
 
 Every skill in the suite follows this file. It keeps the skills working as one system: one Preference Sheet, one set of task and loop leverage rules, one people database, one way of handling the EA, and one set of house rules.
 
@@ -63,7 +63,7 @@ Writes allowed: [tasks Y/N] [people pages Y/N] [email drafts Y/N] [complete LLs 
 Scan mode: [suggested first (first 2 weeks: items are created right away in a Suggested section; delete mistakes, the rest moves in the next day) / auto-create (created straight into the list)]
 Schedules (all on by default, section 7):
   Debrief sweep [weekdays 7:30am] -> each call debriefed [10] min after it ends  |  Debrief catch-all [weekdays 5:45pm]
-  Prebriefs [weekdays 7:40am, morning of, always 10 min after the sweep]  |  Daily scans: email loop + missed tasks [weekdays 8:45am]  |  Loop manager [weekdays 9:15am]
+  Prebriefs [weekdays 7:40am, morning of, always 10 min after the sweep] + hourly check [hourly until the last call]  |  Daily scans: email loop + missed tasks [weekdays 8:45am]  |  Loop manager [weekdays 9:15am]
   eDraft pickup [weekdays 12pm + 5:45pm]  |  Calendar upkeep [weekdays 3pm]  |  EOD update [weekdays 4:30/4:45pm]  |  Calendar review [Fri 9am]
 Email voice: [5-line note learned from sent mail: greeting, sign-off, length, tone]  |  Confirmations: [draft for external meetings / never]
 Delegate sends for me: [none, or written authorization for specific categories, e.g. scheduling confirmations]
@@ -190,8 +190,9 @@ Every skill runs on a schedule by default. Asking directly ("debrief my call wit
 |---|---|---|
 | Debrief sweep | Weekdays 7:30am | Reads today's calendar, marks each call internal or external (by `Company domain(s)`) and skips never-recorded calls, creates the `Call with` tasks if turned on, and schedules a one-time debrief **10 minutes after each call's scheduled end** (a buffer in case it runs long). |
 | Per-call debrief | End of each call + 10 min | Debriefs that call. If the recording isn't ready, tries once more 30 minutes later, then leaves it for the catch-all. |
-| Debrief catch-all | Weekdays 5:45pm | Debriefs anything the sweep couldn't plan for: calls added or moved after the sweep, late recordings, dictations sent by email. For no-record calls, creates `Debrief from your notes - [First Last]` with the exact steps to dictate. |
+| Debrief catch-all | Weekdays 5:45pm | Debriefs anything the sweep and the prebrief hourly check couldn't plan for: calls added or moved late (or all of them if the prebrief skill isn't installed), late recordings, dictations sent by email. For no-record calls, creates `Debrief from your notes - [First Last]` with the exact steps to dictate. |
 | Prebriefs | Weekdays 7:40am (morning of) | Runs 10 minutes after the debrief sweep, which creates the `Call with` tasks first; if the exec moves one time, move the other with it. Briefs every call that day and puts each brief where `Prebriefs` says (default: inside the `Call with` task). |
+| Prebrief hourly check | Weekdays, hourly from the hour after the prebriefs until the last call starts | Catches calls added, moved, cancelled or changed since the morning: briefs new calls, updates briefs, keeps `Call with` tasks and one-time debriefs in step. Silent when nothing changed. |
 | Daily scans | Weekdays 8:45am | Email loop scan + missed-task scan in one pass, one report. Includes the AM Ping (yesterday's meetings with no debrief). |
 | Loop manager | Weekdays 9:15am | Due `LL \| Did...?` questions: close, nudge, reschedule. Delivered to the loop owner. |
 | eDraft pickup | Weekdays 12pm and 5:45pm | Turns every "Edraft:" email to self into a draft. |
@@ -200,7 +201,7 @@ Every skill runs on a schedule by default. Asking directly ("debrief my call wit
 | Calendar review | Fridays 9am | Next week + 2-3 week lookahead. |
 
 **Fit times to the exec's day.** The times above are defaults. Setup moves them to fit the exec's working hours and shows the list for a yes, keeping these rules so every output is ready when it's needed:
-- Prebriefs run 10 minutes after the debrief sweep, and both finish before the exec's first call.
+- Prebriefs run 10 minutes after the debrief sweep, and both finish before the exec's first call. The hourly check runs on the hour after that, through the start of the last call.
 - Daily scans and the loop manager finish at least 15 minutes before the Morning review's ready-by time.
 - Calendar upkeep runs at least 30 minutes before the EOD update, and the EOD update finishes before the End of day review's ready-by time.
 - The debrief catch-all runs after the exec's last call of the day; eDraft pickups run midday and at the end of the day.
