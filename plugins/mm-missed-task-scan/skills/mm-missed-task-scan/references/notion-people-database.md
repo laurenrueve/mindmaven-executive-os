@@ -15,6 +15,7 @@ Create a database called **People** inside a page called `Relationships`.
 | Cell | Phone | Backup contact for prebriefs |
 | LinkedIn | URL | |
 | We Met | Text | How and when the exec first met them, and who introduced them |
+| Bio | Text | 2-3 lines from public sources (role history, company, notable public work), researched **once** when the person is first added, labeled "public sources" with links. Never their personal life. |
 | Relationship | Select | Client, Prospect, Investor, Partner, Team, Friend, Other |
 | Last met | Date | Updated after each debrief |
 | Next touch | Date | Date of the earliest upcoming loop leverage |
@@ -32,11 +33,12 @@ Create a database called **People** inside a page called `Relationships`.
 
 Every row in the database opens as a page. That page is the running record of the relationship: everything learned about this person, across every meeting, in one place. The properties are the quick-glance summary for views and filters. The page is the full story.
 
-When creating a new person, build the page with this template:
+When creating a new person, research the **Bio** once from public sources (labeled, with links; never their personal life), then build the page with this template:
 
 ```
 [Callout] Quick glance
   Who: [Title] at [Company]  |  We met: [how, when, who introduced]
+  Bio (public sources, researched [date]): [2-3 lines] [links]
   Family: [Spouse/partner, kids with ages, dated]
   Location: ...  |  Cell: ...  |  LinkedIn: ...
   Personal Interests & Passions: [top 2-3]
@@ -70,7 +72,9 @@ When creating a new person, build the page with this template:
 
 **Notes outside meetings:** the user can also say "add a note to Maria's page: she just got promoted" or "Maria's daughter got into Michigan". Add it as a dated entry in `Running notes` (title it `[YYYY-MM-DD] | Note`), and update Quick glance, Upcoming moments and properties the same way.
 
-**Before a call:** if the user asks "what do I know about Maria?" or "prep me for my call with Maria", read her page and give a short brief: Quick glance, open commitments, upcoming moments, and the last 2-3 running notes.
+**"What do I know about Maria?"** First **refresh** her page: check email, chat, the task tool, the calendar, and the recorder since `Last met`/`Last touch` for anything new (house rule 5), add it as a dated entry, and update Quick glance. Then answer in a few lines (Quick glance, open commitments both ways, upcoming moments, the last 2-3 running notes) with a link to her page. Answer only from the page and its sources, never from memory. (From Mindmaven's Contact Memory skill.) "Prep me for my call with Maria" goes to the prebrief skill if installed.
+
+**"That's no longer true"** about a fact: move it to `No longer true` with the date and the user's words as the receipt. Never delete.
 
 ## Views to create
 

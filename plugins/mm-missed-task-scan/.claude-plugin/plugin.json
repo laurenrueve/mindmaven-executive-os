@@ -1,6 +1,6 @@
 {
     "name":  "mm-missed-task-scan",
-    "version":  "0.4.8",
+    "version":  "0.4.9",
     "description":  "Daily scan of the user\u0027s email and Slack or Teams for things the user owes that never made it into their task tool - promises they made (\"I\u0027ll send that over\") and requests made of them - checked against every source so nothing already done gets suggested, deduped against existing tasks and dismi...",
     "author":  {
                    "name":  "Mindmaven"

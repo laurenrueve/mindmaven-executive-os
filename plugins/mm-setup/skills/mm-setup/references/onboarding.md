@@ -56,6 +56,7 @@ Explain what each skill is for, one line each. List only the skills this exec in
      - **In each call task** (recommended): the brief sits inside that call's `Call with` task.
      - **One morning email** to you with all of today's briefs in time order.
      - **Both.**
+     Then: "Want a short yellow 'Prebrief' event on your calendar right before each call, linking to the brief? Handy if you live in your calendar." (Default: no.)
    - **Follow-up emails:** "After external calls, should I draft the follow-up email for you to send? Always, ask each time, or never?"
    - **Confirmations:** "Should I draft confirmation emails for tomorrow's external meetings each afternoon?" (Recommended if they or their delegate already send them.)
    - **Your email voice:** "I'll read 20 of your recent sent emails so drafts sound like you. OK?" Save the voice note.

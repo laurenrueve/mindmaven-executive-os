@@ -98,7 +98,7 @@ FIX BEFORE THE CALL
 
 ## Step 4 - Deliver
 
-Write each brief to its destination. A scheduled run never asks questions: it delivers what it has and lists anything it couldn't brief, and any problem to fix before a call, in the **Before today's calls** section of the Morning touchpoint (conventions section 8).
+Write each brief to its destination. If `Prebriefs` includes the calendar link, also create (or update, never duplicate) the `Prebrief: [First Last]` event on the exec's own calendar right before the call, with no attendees and a link to the brief (conventions section 8). A scheduled run never asks questions: it delivers what it has and lists anything it couldn't brief, and any problem to fix before a call, in the **Before today's calls** section of the Morning touchpoint (conventions section 8).
 
 Delegate Mode 2: the delegate's Claude writes the briefs; the delegate adds what only they know (a dietary note, a call the exec took) as a comment on the `Call with` task.
 

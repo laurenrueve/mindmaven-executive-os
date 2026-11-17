@@ -1,6 +1,6 @@
 # Mindmaven Executive OS: shared conventions
 
-**This copy of the suite is version 0.4.8.** (Compare it with `Suite version` in the Preference Sheet; see "After an update" in section 1.)
+**This copy of the suite is version 0.4.9.** (Compare it with `Suite version` in the Preference Sheet; see "After an update" in section 1.)
 
 Every skill in the suite follows this file. It keeps the skills working as one system: one Preference Sheet, one set of task and loop leverage rules, one people database, one way of handling the EA, and one set of house rules.
 
@@ -56,7 +56,7 @@ Calendar rules:
   Invite naming: [(C) First Last <> First Last | in person: (SF) ... | tentative: (T)]
   Colors: [the exec's own mapping, with exact Google event color name + ID (tool-guides.md, "Google Calendar colors"), e.g. Internal = Lavender (1), Personal = Flamingo (4), Tentative = Graphite (8), External = calendar color (none)]
 Travel preferences: [home airport, airlines, cheapest vs. preferred, nonstop when possible?, red-eyes, airport arrival lead, buffer landing -> first meeting, hotels, ground transport]
-Prebriefs: [task / email / both] at [morning of, e.g. 7:40am, 10 min after the debrief sweep]  (task = inside each "Call with" task; email = one morning email to yourself with all of today's briefs)
+Prebriefs: [task / email / both] + calendar link [yes/no] at [morning of, e.g. 7:40am, 10 min after the debrief sweep]  (task = inside each "Call with" task; email = one morning email to yourself with all of today's briefs)
 Post-meeting: follow-up email draft [always for external calls / ask / never]
 Delivery (the two daily touchpoints, section 8): [task: "Review | Morning" + "Review | End of day" / email to me]  ready by [9:30am] and [4:45pm]
 Writes allowed: [tasks Y/N] [people pages Y/N] [email drafts Y/N] [complete LLs with proof Y/N] [calendar: own-only automatic (default: changes only the exec sees, like colors and their own blocks, are made and listed as "Already fixed"; anything others see needs a yes) / with approval (everything needs a yes) / no]
@@ -120,7 +120,7 @@ Use the exec's first name (from `Me:`), not "I", so it reads the same for the EA
 |---|---|---|
 | Get | 1: the LL question | EA (exec in Mode 0) |
 | Give | 2: the actual task (`Send Maria the Q3 deck`) + the LL question to confirm it happened | Task: whoever does it. LL: EA (exec in Mode 0) |
-| Moment | 2: the touch task (`Wish Maria a great trip to Lisbon`, with a draft message inside) + the LL question | Touch: always the exec (their own voice). LL: EA (exec in Mode 0) |
+| Moment | 2: the touch task (`Wish Maria a great trip to Lisbon`, with a **suggested gesture** and a draft message inside) + the LL question | Touch: always the exec (their own voice). LL: EA (exec in Mode 0) |
 
 In Mode 0 (no EA), combine the two into the LL question only, owned by the exec, with the draft inside, so the task list doesn't double up.
 
@@ -148,7 +148,9 @@ In Mode 0 (no EA), combine the two into the LL question only, owned by the exec,
 
 **Closing a loop:** when an LL is due, first check the inbox and chat for whether it happened. Closed -> it can be completed (by whoever owns it, or reported as "looks done" by a scan). Not closed -> draft a nudge for the EA to send (gets), or remind the exec (gives and moments). A loop is closed only when it's actually closed: "working on it" is not closed.
 
-**Description:** context with its receipt, the draft message for moments and nudges, links to the source and the person's page, `Source: [skill]`.
+**Suggested gesture (moments):** one concrete way to show up, beyond a message, matched to what's on their page: send the article on their passion, a small gift for the new baby, an intro to someone who can help with their challenge, a call instead of a text for hard news. One line, optional to act on. (From Mindmaven's Moments skill.)
+
+**Description:** context with its receipt, the suggested gesture and draft message for moments, the draft for nudges, links to the source and the person's page, `Source: [skill]`.
 
 ## 4. People pages and APPA
 
@@ -215,6 +217,7 @@ Every skill runs on a schedule by default. Asking directly ("debrief my call wit
   - **Task:** inside each `Call with [First Last] - YYYY-MM-DD` task in the task tool (description, or a comment if the task already exists). Best when the exec lives in their task list: the brief sits next to the call.
   - **Email:** one morning email to the exec, subject `Prebriefs | [Day, date]`, with every brief for the day in time order. Best when the exec starts the day in their inbox. This is the one email the suite sends without asking each time, because the exec chose it, and only to the exec's own address.
   - **Both:** the brief in each task, plus the morning email.
+  - **Add-on, any of the above: calendar link.** A short `Prebrief: [First Last]` event on the exec's own calendar right before the call (5-10 min, no attendees, Banana (5) yellow unless their colors say otherwise), with a link to where the brief is. Best for execs who live in their calendar. An own-only change, so it needs only the `own-only automatic` calendar setting. Off unless chosen. (From Mindmaven's Pre-brief skill.)
 - **Debriefs:** tasks and LL questions in the task tool; facts on people pages; follow-up email in drafts if turned on. Anything that needs the exec goes in the End of day touchpoint (below); no separate review task.
 - **Everything else that needs the exec:** one of the two daily touchpoints (below). No skill creates its own review task.
 - **Slack is never a delivery option.** The suite reads Slack (to find commitments and check whether things are done) but never posts there; posts aren't reliably seen. Deliver to the task tool or email only.
