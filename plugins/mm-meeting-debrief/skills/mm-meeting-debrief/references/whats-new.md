@@ -4,6 +4,7 @@ Read by `mm-setup` ("update my setup", "Welcome back") and by any skill that fin
 
 | Version | New scheduled runs | New settings (default) | What changed for the exec |
 |---|---|---|---|
+| 0.5.2 | | | Scheduled runs point to their skill instead of restating its steps, so skill updates always reach them. During the update check, **review each existing Exec OS run's instructions**: if one restates the skill's steps, offer to replace them with the short form (conventions section 7), keeping the exec's personal rules. |
 | 0.5.1 | | | The update check now also finds new scheduled runs. Preference Sheet never stores card expiration dates or security codes. |
 | 0.5.0 | | | New skill: **Preference Sheet** (`mm-preference-sheet`), the Executive Preference Document builder for an EA. Not installed automatically: if they have an EA, suggest installing it (plugin: Customize > Plugins > Discover; zip: from their coach). Setup now reads that document first if it exists. |
 | 0.4.10 | **Prebrief hourly check**: weekdays, hourly from the hour after the prebriefs until the last call starts (section 7) | | Calls added, moved, cancelled or changed during the day get a brief, an update, or a rescheduled debrief within the hour. Silent when nothing changed. |

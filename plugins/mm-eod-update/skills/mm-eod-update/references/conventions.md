@@ -1,6 +1,6 @@
 # Mindmaven Executive OS: shared conventions
 
-**This copy of the suite is version 0.5.1.** (Compare it with `Suite version` in the Preference Sheet; see "After an update" in section 1.)
+**This copy of the suite is version 0.5.2.** (Compare it with `Suite version` in the Preference Sheet; see "After an update" in section 1.)
 
 Every skill in the suite follows this file. It keeps the skills working as one system: one Preference Sheet, one set of task and loop leverage rules, one people database, one way of handling the EA, and one set of house rules.
 
@@ -208,7 +208,7 @@ Every skill runs on a schedule by default. Asking directly ("debrief my call wit
 - The debrief catch-all runs after the exec's last call of the day; eDraft pickups run midday and at the end of the day.
 - The Friday calendar review finishes before Friday's Morning review is ready.
 
-**How schedules get created:** setup creates them as Claude scheduled tasks, each one calling its skill by name, so an updated skill is used automatically on the next run. If the client's Claude can't create one-time runs, the per-call debrief falls back to the 5:45pm catch-all, and setup says so. If the client can't schedule at all, setup gives them the one phrase to say each morning and evening instead, and says so plainly.
+**How schedules get created:** setup creates them as Claude scheduled tasks, each one calling its skill by name, so an updated skill is used automatically on the next run. **Keep each run's instructions short and point to the skill; never restate its steps.** The instructions say which skill and which mode to run ("Use mm-meeting-prebrief, Hourly check"), where the Preference Sheet and its backup are, "scheduled run: never ask questions", and only the exec's personal rules that aren't in the Preference Sheet. Restating the steps freezes today's version into the run, so later skill updates never reach it and the copy drifts from the skill. If the client's Claude can't create one-time runs, the per-call debrief falls back to the 5:45pm catch-all, and setup says so. If the client can't schedule at all, setup gives them the one phrase to say each morning and evening instead, and says so plainly.
 
 **Existing automations:** setup looks for what already does prep, debriefs, or scans (Claude scheduled tasks, repeating task patterns, recorder and email automations, other skills), suggests Keep theirs / Use ours / Run both for each, then asks about anything it couldn't see. So the client never gets two briefs per call. Turn off only what the client approves; anything Claude can't reach becomes a `Turn off [name]` task with steps, and the overlapping skill waits until it's done.
 
