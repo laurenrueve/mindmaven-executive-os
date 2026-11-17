@@ -115,8 +115,13 @@ OTHER FLAGS & IRREGULARITIES
   6. [Wed] 6 back-to-backs, no lunch. My recommendation: move [meeting] to Fri, book lunch. OK? Y/N
   7. [Thu] 7:00am breakfast, before your 7:30 limit. I'm assuming it stays. Keep? Y/N
 
-FIXES (logistics; I'll make these on one yes)  [-> EA in Mode 1/2]
-  A. [Tue 2pm] Add a video link.  B. [Wed 10am] Add Tom (sends Tom an invite).  C. Rename 3 invites to (C) Name <> [Exec].
+ALREADY FIXED (only you see these; say "undo [letter]" to reverse)
+  a. [Wed 11:30] Added a 30-min travel block before the in-person lunch.
+  b. [Thu] Recolored 2 internal meetings to Lavender (1).
+  c. [Mon 4pm] Added a Board prep block.
+
+FIXES (these notify someone or remove something; I'll make them on one yes)  [-> EA in Mode 1/2]
+  A. [Tue 2pm] Add a video link (sends attendees an update).  B. [Wed 10am] Add Tom (sends Tom an invite).  C. Rename 3 invites to (C) Name <> [Exec] (attendees see the new title).
   D. [Tue + Thu] Back-to-back external calls on the same link: give the second its own link.  E. Release 2 stale (T) holds.
 
 PERSONAL + APPOINTMENTS
@@ -133,15 +138,23 @@ ALL CLEAR: [what's fine, one line]
 
 Omit empty sections. Fixes that notify other people are still listed with "(sends [Name] an update)".
 
+**Own-only changes are made before the review is delivered** (when `Writes allowed` calendar is `own-only automatic`, the default), then listed under ALREADY FIXED. Own-only means nobody else is notified or sees a change:
+- **Color** of any event (colors are per person in Google and Outlook). Use the exact color name and ID (`tool-guides.md`).
+- **Creating** blocks with no other attendees: travel, prep, lunch, Whitespace, focus, out-of-office.
+- **Editing** events that have no other attendees (title, time, description, color).
+- Never: renaming, moving, or adding links to an event that has other attendees (they see it), adding attendees, deleting, declining, releasing holds, or anything inside a protected block the exec set. Those stay in FIXES or numbered decisions.
+
+After each own-only change, re-read the event to confirm it landed. If a change fails, list it under FIXES instead. "Undo [letter]" reverses exactly that change. If `Writes allowed` calendar is `with approval` or `no`, put own-only changes in FIXES as before.
+
 ## Step 7 - Deliver and fix
 
-Deliver as the **Calendar review** section of Friday's `Review | Morning [date]` touchpoint (conventions section 8), or in that morning's email per `Delivery`. The section's first line always says how to answer: *"Reply in a comment on this task with your calendar answers, e.g. '1 Y, 2 N, fixes A-C'. No reply = nothing changes."* Run on any other day, it goes in that day's Morning touchpoint the same way. A scheduled run stops here (house rule 3).
+Deliver as the **Calendar review** section of Friday's `Review | Morning [date]` touchpoint (conventions section 8), or in that morning's email per `Delivery`. The section's first line always says how to answer: *"Reply in a comment on this task with your calendar answers, e.g. '1 Y, 2 N, fixes A-C, undo b'. Already fixed items stay unless you say undo. No reply = nothing else changes."* Run on any other day, it goes in that day's Morning touchpoint the same way. A scheduled run stops here (house rule 3).
 
 **Applying the answers:** setup also schedules a short "apply calendar answers" check (default Friday 3pm and Monday 8am) that reads the exec's reply comment on the Morning touchpoint task (or their reply by email or in chat), makes the approved changes below, and replies in the same place with what changed. The exec can also just say "apply my calendar review" any time.
 
 - **Exec replies** ("1 Y, 2 N, fixes A-C"): make only what was approved, and only where `Writes allowed` permits.
   - Changes that **notify other people** (adding attendees, changing time or location of a shared meeting) need an explicit yes for that item. A batch "fixes A-E" counts as a yes for each listed item because each one says who it notifies.
-  - Changes only the exec sees (travel, prep, lunch, Whitespace, out-of-office blocks; renaming or recoloring the exec's own copy) can be made on the batch yes.
+  - Changes only the exec sees were already made before delivery (ALREADY FIXED, above). The exec's reply can "undo [letter]".
   - **Bookings** (hotels, flights, restaurants) are never made by this skill: they become tasks (to the EA).
   - Approved reschedules become `(re) Schedule | [Name]` tasks unless the user asks you to change the event directly.
 - **Mode 1:** if the exec prefers, create one EA task `Fix calendar items for week of [date]` with the approved list.

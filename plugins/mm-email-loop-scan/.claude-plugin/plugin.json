@@ -1,6 +1,6 @@
 {
     "name":  "mm-email-loop-scan",
-    "version":  "0.4.4",
+    "version":  "0.4.5",
     "description":  "Daily scan of the user\u0027s email for open loops - open commitments the user is waiting on (\"did Dana sign the contract we sent?\", \"did Maria send the deck she promised?\", an intro or decision still pending) and personal moments in people\u0027s lives (trips, moves, new babies, weddings, a kid starting c...",
     "author":  {
                    "name":  "Mindmaven"
